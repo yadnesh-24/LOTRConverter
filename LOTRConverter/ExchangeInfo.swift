@@ -10,6 +10,7 @@ import SwiftUI
 struct ExchangeInfo: View {
     var body: some View {
         ZStack {
+            
             // Background parchment image
             Image(.parchment)
                 .resizable()
@@ -28,22 +29,6 @@ struct ExchangeInfo: View {
                     .padding()
                 
                 // Exchange rates
-                HStack {
-                    // Left currency image
-                    Image(.goldpiece)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                    
-                    // Exchange rate text
-                    Text("1 Gold Piece = 4 Gold Pennies")
-                    
-                    // Right currency image
-                    Image(.goldpenny)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 33)
-                }
                 
                 // Done Button
                 Button("Done") {
